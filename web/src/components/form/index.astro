@@ -1,0 +1,7 @@
+---
+import csv from 'csvtojson';
+import Form from './form.svelte';
+const path= await csv().fromFile('../data/waxtane.csv');
+---
+
+<Form path={path} client:load/>
